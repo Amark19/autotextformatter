@@ -1,0 +1,19 @@
+name: autolineformatter
+description: A package that can automatically hyphenates next line if current line has one or if current line has number to its start it automatically increment number by one for next line. Simplify and enhance your text formatting with this easy-to-use and versatile package.
+version: 0.0.1
+author: Amar Khamkar
+homepage: https://calcont.in
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
