@@ -1,6 +1,6 @@
 
 
-# AutoTextformatter
+# AutoTextFormatter
 
 A Flutter package that automatically adds hyphen or increments numbers to the next line if the current line has one.
 
