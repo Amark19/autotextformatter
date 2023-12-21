@@ -88,4 +88,4 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ## Additional information
 - Maintainer ([Amar khamkar](https://github.com/Amark19)) 
-- License ([MIT]())
+- License ([MIT](https://github.com/Amark19/autotextformatter/blob/master/LICENSE))
