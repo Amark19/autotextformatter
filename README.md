@@ -4,7 +4,8 @@
 
 A Flutter package that automatically adds hyphen or increments numbers to the next line if the current line has one.
 
-Uploading flutter-pckg.mp4…
+https://github.com/Amark19/autotextformatter/assets/71604396/74b97687-ed81-4c46-9f1f-3aeae09d172c
+
 
 ## Features
 
