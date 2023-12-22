@@ -1,16 +1,16 @@
-library autolineadjuster;
+library autotextformatter;
 
 import 'package:flutter/cupertino.dart';
 
 /// A Calculator.
-class LineAdjuster {
+class TextFormatter {
   String currentText = "", previousText = "";
   late TextEditingController targetController ;
-  LineAdjuster({required TextEditingController targetController}) {
+  TextFormatter({required TextEditingController targetController}) {
     this.targetController = targetController;
   }
 
-   void Adjust() {
+   void Format() {
     final value = targetController.value;
     final cursorPosition = targetController.selection.base.offset;
     final text = value.text;
