@@ -1,11 +1,15 @@
-## 0.0.1
+## 0.0.4
 
-Initial release.
+changelog & readme updated
+
+## 0.0.3
+
+Minor change in example & code.
 
 ## 0.0.2
 
 Added video in readme.
 
-## 0.0.3
+## 0.0.1
 
-Minor change in example & code.
+Initial release.

@@ -19,7 +19,7 @@ To use the `autotextformatter` Flutter package, include it in your `pubspec.yaml
 
 ```yaml
 dependencies:
-  autotextformatter: ^1.0.0  # Use the actual version you want
+  autotextformatter: ^0.0.3  # Use the actual version you want
 ```
 
 Run the following command to install the package:
