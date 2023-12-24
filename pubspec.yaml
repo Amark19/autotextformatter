@@ -1,6 +1,6 @@
 name: autotextformatter
-description: A package that can automatically hyphenates next line if current line has one or if current line has number to its start it automatically increment number by one for next line. Simplify and enhance your text formatting with this easy-to-use and versatile package.
-version: 0.0.3
+description: Automatically hyphenate or increment numbers on the next line. Simplify and enhance text formatting with this versatile package.
+version: 0.0.5
 author: Amar Khamkar
 homepage: https://github.com/Amark19/autotextformatter
 

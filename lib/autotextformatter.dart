@@ -10,7 +10,7 @@ class TextFormatter {
     this.targetController = targetController;
   }
 
-   void Format() {
+   void format() {
     final value = targetController.value;
     final cursorPosition = targetController.selection.base.offset;
     final text = value.text;
@@ -62,7 +62,6 @@ class TextFormatter {
   }
 
   String _getNumbersInStart(String txt) {
-    int numbers = 0;
     String strNumbers = "";
     for (int i = 0; i < txt.length; i++) {
       if (RegExp("[0-9]").hasMatch(txt[i])) {
