@@ -1,6 +1,6 @@
 name: autotextformatter
 description: Automatically hyphenate or increment numbers on the next line. Simplify and enhance text formatting with this versatile package.
-version: 0.0.5
+version: 0.0.6
 author: Amar Khamkar
 homepage: https://github.com/Amark19/autotextformatter
 

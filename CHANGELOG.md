@@ -1,5 +1,9 @@
 ## 0.0.5
 
+example added
+
+## 0.0.5
+
 pub-points improvements
 
 ## 0.0.4

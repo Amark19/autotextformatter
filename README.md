@@ -19,7 +19,7 @@ To use the `autotextformatter` Flutter package, include it in your `pubspec.yaml
 
 ```yaml
 dependencies:
-  autotextformatter: ^0.0.5
+  autotextformatter: ^0.0.6
 ```
 
 Run the following command to install the package:
@@ -34,58 +34,28 @@ Import the `autotextformatter` package in your Dart file:
 ```dart
 import 'package:autotextformatter/autotextformatter.dart';
 ```
-Use the package to automatically format text:
+Following points are necessary to use this package :
+
+1. Very first you need to have `TextEditingController` instance that has to be pass to TextFormatter constructor.
+2. Then you can create instance of TextFormatter class to which you need to pass controller.
+3. Here, you may need to use late keyword before initialization to avoid error `The instance member 'contoller' can't be accessed in an initializer` .
 
 ```dart
-import 'package:flutter/material.dart';
-import 'package:autotextformatter/autotextformatter.dart';
-
-void main() {runApp(const MyApp());}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Autotextformatter Demo'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   TextEditingController descController = TextEditingController();
   late TextFormatter textAdjuster = TextFormatter(targetController: descController);
+```
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: TextFormField(
+Use instance inside onChanged event of TextField, as text needs to be check everytime.
+
+```dart
+  TextFormField(
         controller: descController,
         maxLines: null,
         textInputAction: TextInputAction.newline,
         onChanged: (value) {
           textAdjuster.format();
         },
-      ),
     );
-  }
-}
 ```
 
 ## Additional information

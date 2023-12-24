@@ -5,12 +5,12 @@ import 'package:flutter/cupertino.dart';
 /// A Calculator.
 class TextFormatter {
   String currentText = "", previousText = "";
-  late TextEditingController targetController ;
+  late TextEditingController targetController;
   TextFormatter({required TextEditingController targetController}) {
     this.targetController = targetController;
   }
 
-   void format() {
+  void format() {
     final value = targetController.value;
     final cursorPosition = targetController.selection.base.offset;
     final text = value.text;
